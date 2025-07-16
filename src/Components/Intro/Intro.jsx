@@ -9,7 +9,7 @@ import crown from "../../img/crown.png";
 import FloatinDiv from "../FloatingDiv/FloatingDiv";
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
-import Instagram from "../../img/instagram.png";
+import Facebook from "../../img/facebook-new.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
@@ -41,9 +41,15 @@ return (
         </Link>
         {/* social icons */}
         <div className="i-icons">
-            <img src={Github} alt="" />
-            <img src={LinkedIn} alt="" />
-            <img src={Instagram} alt="" />
+            <a href="https://github.com/GonzoTrickster9899" target="_blank" rel="noopener noreferrer">
+                <img src={Github} alt="" />
+            </a>
+            <a href="https://www.linkedin.com/in/lancelot-oleriana-a891a6204/" target="_blank" rel="noopener noreferrer">
+                <img src={LinkedIn} alt="" />
+            </a>
+            <a href="https://web.facebook.com/nightthinker99/"  target="_blank" rel="noopener noreferrer">
+                <img src={Facebook} alt="" />
+            </a>
         </div>
         </div>
         {/* right image side */}
@@ -77,7 +83,7 @@ return (
             className="floating-div"
         >
             {/* floatinDiv mein change hy dark mode ka */}
-            <FloatinDiv img={thumbup} text1="Best Design" text2="Award" />
+            <FloatinDiv img={thumbup} text1="UI/UX" text2="Designer" />
         </motion.div>
 
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
