@@ -1,12 +1,24 @@
 import React from 'react';
 import './Services.css';
 import Card from '../Card/Card';
-import HeartEmoji from '../../img/heartemoji.png';
-import Glasses from '../../img/glasses.png';
-import Humble from '../../img/humble.png';
+import Designer from '../../img/designer.png';
+import Developer from '../../img/developer.png';
+import IT from '../../img/it_pro.png';
+//import { themeContext } from '../../Context';
+import { motion } from "framer-motion";
 import Resume from './resume.pdf'; // Assuming you have a resume file in the img folder
 
 const Services = () => {
+    //context
+    // const theme = useContext(themeContext);
+    // const darkMode = theme.state.darkMode;
+
+    //transition
+    const transition = {
+        duration: 2,
+        type: "spring",
+    };
+
     return (
         <div className="services">
             {/* Left Side */}
@@ -14,9 +26,11 @@ const Services = () => {
             <span>My Awesome</span>
             <span>services</span>
             <spane>
-                Lorem ipsum is simpley dummy text of printing of printing. Lorem
+                I'm a technology professional who handles the entire product  
                 <br />
-                ipsum is simpley dummy text of printing of printing.
+                lifecycle. I don't just build websites; I architect complete digital 
+                <br />
+                solutions that are beautiful, functional, and secure.
             </spane>
             <a href={Resume} download>
                 <button className="button s-button">Download CV</button>
@@ -26,29 +40,49 @@ const Services = () => {
             {/* Right Side */}
             <div className="cards">
                 {/* First Card */}
-                <div style={{left: '14rem'}}>
+                <motion.div
+                    initial={{ left: "40rem" }}
+                    whileInView={{ left: "25rem" }}
+                    transition={transition}
+                    style={{top: "-10rem"}}
+                >
                     <Card
-                        emoji = {HeartEmoji}
-                        heading = {'Design'}
-                        detail = {"Figma, Sketch, Photoshop, Adobe, Adobe XD"}
+                        emoji = {Designer}
+                        heading = {'UI/UX Designer'}
+                        detail1 = {"Figma, Canva, Adobe Illustrator and Photoshop use for platform"}
+                        detail2 = {"Wireframes, prototypes, information architecture and UX Research are particular jobs."}
                     />
-                </div>
+                </motion.div>
+                {/*<div style={{top: "-3rem", left: "18rem"}}></div>*/}
                 {/* Second Card */}
-                <div style={{top: "12rem", left: "-4rem"}}>
+                <motion.div
+                    initial={{ left: "40rem"}}
+                    whileInView={{ left: "5rem" }}
+                    transition={transition}
+                    style={{ top: "0rem "}}
+                >
                     <Card
-                        emoji = {Glasses}
+                        emoji = {Developer}
                         heading = {"Developer"}
-                        detail = {"Html, Css, JavaScript, React, NodeJS"}
+                        detail1 = {"HTML, CSS, JavaScript, React, NodeJS, Python, Dart and PHP are languages"}
+                        detail2 = {"Laravel, Bootstrap, React, CodeIgniter, Flutter, MySQL, MongoDB are frameworks and databases."}
                     />
-                </div>
+                </motion.div>
+                {/*<div style={{top: "-11rem", left: "3rem"}}></div>*/}
                 {/* Third Card */}
-                <div style={{top: "19rem", left: "12rem"}}>
+                <motion.div
+                    initial={{  left: "40rem" }}
+                    whileInView={{ left: "22rem" }}
+                    transition={transition}
+                    style={{ top: "12rem" }}
+                >
                     <Card
-                        emoji = {Humble}
-                        heading = {"UI/UX"}
-                        detail = {"Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}
+                        emoji = {IT}
+                        heading = {"IT Professional"}
+                        detail1 = {"Troubleshooting, data entry and management, software and hardware repair, cybersecurity, office and work documentations and IT supports are my main prefessions and skills"}
                     />
-                </div>
+                </motion.div>
+                {/*<div style={{top: "6rem", left: "32rem"}}></div>*/}
                 <div className="blur s-blur2" style={{background: "var(--purple)"}}></div> 
             </div>
         </div>
