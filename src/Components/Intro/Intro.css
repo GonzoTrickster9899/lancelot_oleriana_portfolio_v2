@@ -40,7 +40,7 @@
 .i-icons {
     margin-top: 2rem;
     display: flex;
-    gap: 2.5rem;
+    gap: 0rem;
 }
 .i-icons > * {
     transform: scale(0.5);
