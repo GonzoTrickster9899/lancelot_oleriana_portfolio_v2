@@ -1,42 +1,45 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Portfolio.css";
-import {Swiper, SwiperSlide} from "swiper/react";
-import Sidebar from "../../img/sidebar.png";
-import Ecommerce from "../../img/ecommerce.png";
-import HOC from "../../img/hoc.png";
-import MusicApp from "../../img/musicapp.png";
-import 'swiper/css'
+import { Swiper, SwiperSlide } from "swiper/react"
+import "swiper/css";
 
+import Geotechnical from "../../img/geotechnical_calc.png";
+import DWCL from "../../img/dwcl.png";
+import Roompal from "../../img/roompal_portfolio.png";
+import CTCED from "../../img/ctced.jpg"
+
+import { themeContext } from "../../Context";
 const Portfolio = () => {
-    return(
-        <div className="porfolio">
-            
+    const theme = useContext(themeContext);
+    //const darkMode = theme.state.darkMode;
+    return (
+        <div className="portfolio" id="portfolio">
             {/* heading */}
-            <span>Recent Projects</span>
+            <span style={{/*color: darkMode?'white': ''*/}}>Recent Projects</span>
             <span>Portfolio</span>
 
             {/* slider */}
-            <Swiper 
-            spaceBetween={30} 
-            slidesPerView={3} 
-            grabCursor={true}
-            className="portfolio-slider"
+            <Swiper
+                spaceBetween={30}
+                slidesPerView={3}
+                grabCursor={true}
+                className="portfolio-slider"
             >
                 <SwiperSlide>
-                    <img src={Sidebar} alt="" />
+                    <img src={Geotechnical} alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={Ecommerce} alt="" />
+                    <img src={DWCL} alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={MusicApp} alt="" />
+                    <img src={Roompal} alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={HOC} alt="" />
+                    <img src={CTCED} alt="" />
                 </SwiperSlide>
             </Swiper>
         </div>
-    )
-}
+    );
+};
 
 export default Portfolio;

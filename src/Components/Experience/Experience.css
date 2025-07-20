@@ -1,23 +1,23 @@
 .experience {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5rem;
-    height: 30vh;
-    margin-bottom: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  height: 30vh;
+  margin-bottom: 8rem;
+  /* darkmode */
+  color: var(--black);
 }
-
-.achivements {
+.achievement{
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
     align-items: center;
 }
-
-.circle{
+.circle {
     width: 4rem;
     height: 4rem;
     background: white;
-    border-radius: 50%;
+    border-radius: 100%;
     position: relative;
     display: flex;
     align-items: center;
@@ -26,20 +26,26 @@
     font-weight: bold;
     margin-bottom: 2rem;
 }
-
 .circle::before {
     border-radius: 100%;
     content: '';
     background-image: linear-gradient(to bottom, #87e6fb 0%, #ffc05c 100%);
-    top: - 8px;
-    left: - 8px;
-    bottom: - 8px;
-    right: - 8px;
+    top: -8px;
+    left: -8px;
+    bottom: -8px;
+    right: -8px;
     position: absolute;
-    z-index: -1;
+    z-index:-1;
     box-shadow: var(--boxShadow);
 }
 
-.achivement span:nth-of-type(2) {
+.achievement span:nth-of-type(2){
     color: var(--orange);
+}
+
+
+@media screen and (max-width: 480px) {
+    .experience{
+        transform: scale(0.7);
+    }
 }
