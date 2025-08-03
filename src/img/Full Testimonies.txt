@@ -1,0 +1,9 @@
+Jedricks Testimony
+
+Good afternoon po erps. Regarding sa program project na nagawa mo po, I really liked your worked especially like terms of accuracy nung Calculator despite the technicalities since more on engineering related lahat ng involved sa solving. Mabilis din natatapos yung program each topic yet not sacrificing yung neatness ng UI and yun nga pag generate ng correct answer. Yung lang lance, Salamat ulit. Proven and test yung skills mo.
+
+Jedrick's Classmates
+
+First, I would take this opportunity to commend the programmer dahil nagawa yung program on time given na merong mga constraints like profession gaps na kailangan I fill. To be honest, the calculator itself was exceptional like at first glance, and organized tingnan and also user friendly na din given na merong mga figures and table to know or have a hint on what to input on the specific boxes na kailangan i-supply for calculation. Also, I really like how the data is presented, kakaiba siya unlike typical "excel type" thing program. The calculation upon inputting values din was accurate after guttung hitting the "compute" button at every type of calculator na nasa loob ng program. My suggestion is that, it could been better if medyo i-level up natin yung interface niya, like formatting, colors, and anything related on that. I think meron pang need i-improve sa aspect nato. Maganda naman yung interface ng calculator, simple and hindi masakit sa mata, I am looking for something na it catches the viewer's attention na kapag inopen mo is visually appealing na simple and nababagay sa theme ng subject na pino-program. Overall, maganda yung output nung program based sa instructions na binigay.
+
+Kevin Compay
